@@ -11,6 +11,7 @@ const getWeatherData = async(city) => {
     const data=  await getWeatherData(city)
     showWeatherData(data)
   }
+  console.log(API_KEY);
   showWeatherData = (weatherData) => {
     document.getElementById("city-name").innerText = weatherData.name;
     document.getElementById("weather-type").innerText = weatherData.weather[0].main;
